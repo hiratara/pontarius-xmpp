@@ -49,7 +49,7 @@ xpMessage = ("xpMessage" , "") <?+> xpWrap
     (\((tp, qid, from, to, lang), ext) -> Message qid from to lang tp ext)
     (\(Message qid from to lang tp ext) -> ((tp, qid, from, to, lang), ext))
     (xpElem "{jabber:client}message"
-         (xp5Tuple
+         (xpClean $ xp5Tuple
              (xpDefault Normal $ xpAttr "type" xpMessageType)
              (xpAttrImplied "id"   xpId)
              (xpAttrImplied "from" xpJid)
