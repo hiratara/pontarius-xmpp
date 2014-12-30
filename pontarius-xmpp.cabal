@@ -85,6 +85,8 @@ Library
                  , Network.Xmpp.IM
                  , Network.Xmpp.Internal
                  , Network.Xmpp.Lens
+                 , Network.Xmpp.Marshal
+                 , Network.Xmpp.Types
   Other-modules:   Network.Xmpp.Concurrent
                  , Network.Xmpp.Concurrent.Basic
                  , Network.Xmpp.Concurrent.IQ
@@ -97,7 +99,6 @@ Library
                  , Network.Xmpp.IM.Presence
                  , Network.Xmpp.IM.Roster
                  , Network.Xmpp.IM.Roster.Types
-                 , Network.Xmpp.Marshal
                  , Network.Xmpp.Sasl
                  , Network.Xmpp.Sasl.Common
                  , Network.Xmpp.Sasl.Mechanisms
@@ -109,7 +110,6 @@ Library
                  , Network.Xmpp.Stanza
                  , Network.Xmpp.Stream
                  , Network.Xmpp.Tls
-                 , Network.Xmpp.Types
                  , Network.Xmpp.Utilities
 
   if flag(with-th) && impl(ghc >= 7.6.1)
